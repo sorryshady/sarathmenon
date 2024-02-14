@@ -1,0 +1,69 @@
+.button {
+  user-select: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden !important;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button:focus {
+  outline: none;
+}
+.slider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.el {
+  width: 100%;
+  height: 100%;
+  background-color: var(--text);
+  color: var(--background);
+  font-size: var(--text-subheading);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.el:nth-of-type(2) {
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+}
+
+@media (max-width: 768px) {
+
+  .perspectiveText {
+    font-size: var(--text-subheading);
+    font-weight: bold;
+  }
+  .el {
+    font-size: var(--text-subheading);
+  }
+}
+@media (max-width: 425px) {
+  .button {
+    width: 40px;
+    height: 40px;
+  }
+  .el {
+    font-size: var(--text-mobile-subheading);
+  }
+}
+@media (max-width: 375) {
+  .perspectiveText {
+    font-size: var(--text-description);
+    font-weight: bold;
+  }
+  .el {
+    font-size: var(--text-description);
+  }
+  .el svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}

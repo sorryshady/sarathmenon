@@ -1,0 +1,89 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10rem;
+  font-family: var(--font-maine);
+  font-style: normal;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+}
+
+.title {
+  font-size: var(--text-heading);
+  margin-bottom: 0.5rem;
+  padding-top: 10vh;
+}
+
+.poemContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.poem {
+  width: 100vw;
+  font-size: 20px;
+  margin-top: 4rem;
+}
+
+.poemimage {
+  width: 100%;
+  max-width: 43vw;
+  height: 100%;
+  margin: auto 0;
+}
+
+.poemimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+@media (max-width: 1024px) {
+  .poemContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main > div:nth-child(8) .poem {
+    font-size: 17px;
+  }
+  .poem {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .main > div:nth-child(8) .poem {
+    font-size: 15px;
+  }
+  .main > div:nth-child(5) .poem {
+    font-size: 15px;
+  }
+  .poem {
+    font-size: 17px;
+  }
+}
+@media (max-width: 425px) {
+  .main > div:nth-child(8) .poem {
+    font-size: 9px;
+  }
+  .main > div:nth-child(5) .poem {
+    font-size: 10px;
+  }
+  .poem {
+    font-size: 15px;
+  }
+  .title {
+    font-size: var(--text-mobile-heading);
+  }
+}
+@media (max-width: 320px) {
+  .main > div:nth-child(8) .poem {
+    font-size: 7px;
+  }
+  .main > div:nth-child(5) .poem {
+    font-size: 9px;
+  }
+}
